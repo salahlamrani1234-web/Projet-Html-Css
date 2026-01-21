@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color:black;
+}
+header {
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  height: 25vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d') center/cover;
+}
+.logo {
+  font-size: 26px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-links a:hover {
+  color: #0072ed;
+}
+main {
+  padding: 20px;
+  text-align: center;
+}
+.image {
+  max-width: 65%;
+  height: auto;
+  margin: 20px 0;
+}
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #ededed;
+  color: black;
+  border-radius: 8px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+.service h3 {
+  color: #0072ed;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  width: 50%;
+  font-weight: bold;
+}
+input, textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background:black;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #0072ed;
+}
+footer {
+  background:black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  header {
+    height: 60vh;
+    padding: 20px;
+  }
+  .hero-text h1 {
+    font-size: 32px;
+  }
+  .hero-text p {
+    font-size: 16px;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+  }
+  .section {
+    padding: 40px 20px;
+  }
+}
